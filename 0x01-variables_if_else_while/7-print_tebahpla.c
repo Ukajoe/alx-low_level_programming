@@ -8,12 +8,12 @@
   */
 int main(void)
 {
-    int c;
-for (c = (int)z; c >= (int)a; c--)
-    {
-        putchar(c);
-    }
+int c;
+for (c = 'z'; c >= 'a'; c--)
+{
+putchar(c);
+}
 
-    putchar((int)n);
+putchar('\n');
 return (0);
 }
