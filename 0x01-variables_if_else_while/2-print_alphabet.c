@@ -1,21 +1,14 @@
 
-/* more headers goes there */
 #include <stdio.h>
-#include <ctype.h>
-
-/* betty style doc for function main goes there */
 
 /**
- * main - Entry point
+ * main - Prints the alphabet in lowercase.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-
 int main(void)
 {
-
-char letter;
-
+int letter;
 
 for (letter = a; letter <= z; letter++)
 putchar(letter);
