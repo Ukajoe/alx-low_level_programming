@@ -3,6 +3,7 @@
 
 /**
  * check the standard library provides a similar function isalpha
+*@c: letter being tested
  * Return: Always 0
  */
 
