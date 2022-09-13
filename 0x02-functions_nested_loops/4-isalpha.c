@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * check the standard library provides a similar function isalpha
+ * _isalpha - check the standard library provides a similar function isalpha
 *@c: letter being tested
  * Return: Always 0
  */
