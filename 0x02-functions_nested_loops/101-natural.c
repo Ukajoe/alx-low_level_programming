@@ -20,6 +20,6 @@ z += i;
 i++;
 }
 
-printf(%dn, z);
+printf("%d\n", z);
 return (0);
 }
