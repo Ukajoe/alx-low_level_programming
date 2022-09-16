@@ -16,23 +16,14 @@ if (n < 0)
 _putchar('-');
 a0 *= -1; a1 *= -1; a2 *= -1; a3 *= -1; a4 *= -1;a5 *= -1; a6 *= -1; a7 *= -1; a8 *= -1; a9 *= -1;
 }
-if (s0 != 0)
-_putchar('0' + a0);
-if (s1 != 0)
-_putchar('0' + a1);
-if (s2 != 0)
-_putchar('0' + a2);
-if (s3 != 0)
-_putchar('0' + a3);
-if (s4 != 0)
-_putchar('0' + a4);
-if (s5 != 0)
-_putchar('0' + a5);
-if (s6 != 0)
-_putchar('0' + a6);
-if (s7 != 0)
-_putchar('0' + a7);
-if (s8 != 0)
-_putchar('0' + a8);
+if (s0 != 0)_putchar('0' + a0);
+if (s1 != 0)_putchar('0' + a1);
+if (s2 != 0)_putchar('0' + a2);
+if (s3 != 0)_putchar('0' + a3);
+if (s4 != 0)_putchar('0' + a4);
+if (s5 != 0)_putchar('0' + a5);
+if (s6 != 0)_putchar('0' + a6);
+if (s7 != 0)_putchar('0' + a7);
+if (s8 != 0)_putchar('0' + a8);
 _putchar('0' + a9);
 }
