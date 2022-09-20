@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_array - Prints an inputted number of elements of an array of integers.
@@ -12,13 +13,13 @@ int index;
 
 for (index = 0; index < n; index++)
 {
-printf(%d, a[index]);
+printf("%d", a[index]);
 
 if (index == n - 1)
 continue;
 
-printf(, );
+printf(", ");
 }
 
-printf(n);
+printf("\n");
 }
