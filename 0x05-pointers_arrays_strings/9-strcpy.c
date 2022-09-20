@@ -13,12 +13,18 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+if (dest == NULL) 
+{
+return NULL;
+}
+char *ptr = dest;
+
 while (*src != 0)
 {
 *dest = *src;
 dest++;
 src++;
 }
-return (dest);
+*dest = 0;
+return ptr;
 }
-
