@@ -16,7 +16,7 @@ char *_strcpy(char *dest, char *src)
 char *ptr = dest;
 if (dest == NULL)
 {
-return NULL;
+return (NULL);
 }
 while (*src != 0)
 {
@@ -25,5 +25,5 @@ dest++;
 src++;
 }
 *dest = 0;
-return ptr;
+return (ptr);
 }
