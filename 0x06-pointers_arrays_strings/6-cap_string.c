@@ -35,3 +35,4 @@ index++;
 }
 
 return (str);
+}
