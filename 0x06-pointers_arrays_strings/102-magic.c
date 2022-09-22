@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+/* main - check the code */
 
 int main(void)
 {
