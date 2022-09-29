@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#include "main.h"
+#include main.h
 
 int strlen_no_wilds(char *str);
 void iterate_wild(char **wildstr);
@@ -20,7 +20,7 @@ int len = 0, index = 0;
 
 if (*(str + index))
 {
-if (*str != *)
+if (*str != '*')
 len++;
 
 index++;
@@ -37,7 +37,7 @@ return (len);
  */
 void iterate_wild(char **wildstr)
 {
-if (**wildstr == *)
+if (**wildstr == '*')
 {
 (*wildstr)++;
 iterate_wild(wildstr);
@@ -59,10 +59,10 @@ char *postfix_match(char *str, char *postfix)
 int str_len = strlen_no_wilds(str) - 1;
 int postfix_len = strlen_no_wilds(postfix) - 1;
 
-if (*postfix == *)
+if (*postfix == '*')
 iterate_wild(&postfix);
 
-if (*(str + str_len - postfix_len) == *postfix && *postfix != 0)
+if (*(str + str_len - postfix_len) == *postfix && *postfix != '\0')
 {
 postfix++;
 return (postfix_match(str, postfix));
@@ -81,13 +81,13 @@ return (postfix);
  */
 int wildcmp(char *s1, char *s2)
 {
-if (*s2 == *)
+if (*s2 == '*')
 {
 iterate_wild(&s2);
 s2 = postfix_match(s1, s2);
 }
 
-if (*s2 == 0)
+if (*s2 == '\0')
 return (1);
 
 if (*s1 != *s2)
