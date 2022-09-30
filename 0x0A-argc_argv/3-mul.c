@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-int num1, num2, prod;
+int num1, num2, prod = 1;
 
 if (argc != 3)
 {
@@ -22,7 +22,9 @@ return (1);
 
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
-prod = num1 * num2;
+prod *= num1;
+
+prod *= num2;
 
 printf("%d\n", prod);
 
