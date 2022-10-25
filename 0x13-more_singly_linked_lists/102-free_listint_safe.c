@@ -68,7 +68,6 @@ listint_t *tmp;
 size_t nodes, index;
 
 nodes = looped_listint_count(*h);
-
 if (nodes == 0)
 {
 for (; h != NULL && *h != NULL; nodes++)
@@ -78,14 +77,13 @@ free(*h);
 *h = tmp;
 }
 }
-
 else
 {
 for (index = 0; index < nodes; index++)
 {
 tmp = (*h)->next;
 free(*h);
-            *h = tmp;
+*h = tmp;
 }
 
 *h = NULL;
