@@ -26,7 +26,7 @@ return (0);
 
 num += (b[len] - '0') * mult;
 mult *= 2;
-C}
+}
 
 return (num);
 }
