@@ -17,12 +17,12 @@ unsigned int len;
 len = 0;
 while (needle[len] != '\0')
 len++;
-/*compare substring*/
+/*compare substring
 while (*haystack != '\0')
 {
 if (_strncmp(haystack, needle, len) == 0)
 return (haystack);
 haystack++;
-}
+}*/
 return (NULL);
 }
